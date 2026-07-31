@@ -70,11 +70,11 @@ This module project aims to demonstrate the complete website development process
 
 ✔ Proposal B completed
 
-⏳ Awaiting lecturer approval
+✔ Lecturer approval received (**Proposal A** selected)
 
-⬜ Final website development (Proposal A or Proposal B)
+⏳ Final website development (Seventh-day Adventist Church Website) 
 
-⬜ Testing and refinement
+⬜ Testing and refinement  
 
 ⬜ Final submission
 

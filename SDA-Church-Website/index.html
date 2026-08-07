@@ -3,90 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seventh-day Adventist Church</title>
+    <meta name="description" content="Durban Central SDA Church is a warm, welcoming Seventh-day Adventist congregation in Durban. Join us for worship, Bible study, fellowship and community outreach.">
+    <link rel="icon" href="images/logo/logo_5.png" type="image/png">
+    <title>Durban Central SDA Church | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header>
         <div class="logo">
-            <a href="#"><img src="images/logo/logo_5.png" alt="Church Logo" width="500">Durban Central SDA Church</a>
+            <a href="index.html"><img src="images/logo/logo_5.png" alt="Church Logo" width="500">Durban Central SDA Church</a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="ministries.html" target="_blank">Ministries</a></li>
-                <li><a href="events.html" target="_blank">Events</a></li>
-                <li><a href="donate.html" target="_blank">Donate</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="nav-cta">Give</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main id="main-content">
         <section class="hero">
             <div class="hero-content">
+                <span class="hero-badge">You're welcome here — every Sabbath, 9:00 AM</span>
                 <h1>Welcome To Durban Central SDA Church</h1>
                 <p>
-                    Worship with us and become part of our church family.
+                    Worship with us and become part of our church family. Whether you're new to
+                    faith, new to Durban, or just looking for a church home, there's a seat for you.
                 </p>
-                <a href="#" class="btn">
-                    Get Directions
-                </a>
+                <div class="hero-buttons">
+                    <a href="#visit" class="btn">Get Directions</a>
+                    <a href="#watch-live" class="btn btn-outline">Watch Live</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="images/church building/church_building1.png" alt="Church Building" width="500">
+                <img src="images/church building/church_building1.png" alt="Durban Central SDA Church building" width="500">
             </div>
         </section>
-        <section class="about">
+        <section class="service-times" id="service-times">
+            <div class="info-card">
+                <h3>Sabbath School</h3>
+                <p>Saturdays, 9:00 AM – 10:15 AM</p>
+                <p class="info-sub">Bible study for all ages</p>
+            </div>
+            <div class="info-card">
+                <h3>Divine Service</h3>
+                <p>Saturdays, 10:30 AM – 12:30 PM</p>
+                <p class="info-sub">Worship, music & message</p>
+            </div>
+            <div class="info-card">
+                <h3>Prayer Meeting</h3>
+                <p>Wednesdays, 6:00 PM – 7:00 PM</p>
+                <p class="info-sub">Midweek prayer & devotion</p>
+            </div>
+            <div class="info-card">
+                <h3>Find Us</h3>
+                <p> 38 Keits Avenue, Berea , Durban Central</p>
+                <p class="info-sub">Parking available on-site</p>
+            </div>
+        </section>
+
+        <section class="about" id="welcome">
             <div class="about-image">
+                <img src="images/church building/church_building2.jpg" alt="Congregation fellowshipping outside the church" width="450">
             </div>
-            <div class="quick-links">
-                <a href="#" class="btn">Service Times</a>
-                <a href="#" class="btn">Bible Study</a>
-                <a href="events.html" class="btn">Events</a>
-                <a href="contact.html" class="btn">Contact Us</a>
+            <div class="about-text">
+                <h2>A Church Family In The Heart Of Durban</h2>
+                <p>
+                    For decades, Durban Central SDA Church has been a home for people seeking to know
+                    God and grow together as a community. We believe in the soon return of Jesus Christ,
+                    and we try to live that hope out through worship, service, and genuine friendship.
+                </p>
+                <p>
+                    Come as you are. Our doors — and our hearts — are open to visitors, longtime members,
+                    and anyone still figuring out what they believe.
+                </p>
+                <div class="quick-links">
+                    <a href="#service-times" class="btn">Service Times</a>
+                    <a href="ministries.html" class="btn">Bible Study</a>
+                    <a href="events.html" class="btn">Events</a>
+                    <a href="contact.html" class="btn">Contact Us</a>
+                </div>
             </div>
         </section>
-        <section class="events">
+
+        <!-- Ministries highlight: gives visitors a feel for how to get plugged in -->
+        <section class="ministries" id="ministries">
+            <h2>Find Your Place To Belong</h2>
+            <p class="section-intro">A few of the ways our members connect, serve, and grow.</p>
+            <div class="ministries-grid">
+                <article class="ministry-card">
+                    <img src="images/ministries/children.jpg" alt="Children's Ministry" width="300">
+                    <h3>Children's Ministry</h3>
+                    <p>Fun, faith-filled Sabbath School classes that help kids build a real friendship with Jesus.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+                <article class="ministry-card">
+                    <img src="images/ministries/youth.jpg" alt="Pathfinders and Adventurers youth ministry" width="300">
+                    <h3>Pathfinders &amp; Adventurers</h3>
+                    <p>Adventure, mentorship, and character-building for children, tweens and teens.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+                <article class="ministry-card">
+                    <img src="images/ministries/music.jpg" alt="Music ministry choir" width="300">
+                    <h3>Music Ministry</h3>
+                    <p>Choir, praise team and instrumentalists leading the congregation in worship each week.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+                <article class="ministry-card">
+                    <img src="images/ministries/community-services.jpg" alt="Community services and ADRA outreach" width="300">
+                    <h3>Community Services</h3>
+                    <p>Food parcels, clothing drives and ADRA-supported outreach to families in need around Durban.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+                <article class="ministry-card">
+                    <img src="images/ministries/health.jpg" alt="Health ministry" width="300">
+                    <h3>Health Ministry</h3>
+                    <p>Cooking classes, wellness talks and health screenings rooted in a whole-person approach to health.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+                <article class="ministry-card">
+                    <img src="images/ministries/prayer.jpg" alt="Prayer ministry" width="300">
+                    <h3>Prayer Ministry</h3>
+                    <p>A team of intercessors ready to pray with you over any need, big or small.</p>
+                    <a href="ministries.html" class="link-arrow">Learn more &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Livestream: lets people who can't attend in person still join the service -->
+        <section class="watch-live" id="watch-live">
+            <div class="watch-live-text">
+                <h2>Worship With Us — Wherever You Are</h2>
+                <p>
+                    Can't make it in person? Join our Divine Service live every Saturday at 10:30 AM SAST,
+                    streamed straight from our sanctuary to wherever you're watching.
+                </p>
+                <div class="hero-buttons">
+                    <!-- TODO: Add YouTube/Facebook livestream link -->
+                    <a href="#" class="btn">Watch On YouTube</a>
+                    <a href="#" class="btn btn-outline">Subscribe For Updates</a>
+                </div>
+            </div>
+            <div class="watch-live-media">
+                <img src="images/media/livestream-thumbnail.jpg" alt="Preview of the church livestream" width="500">
+            </div>
+        </section>
+
+        <section class="events" id="events">
             <h2>Upcoming Events</h2>
             <div class="events-slider">
-                <button>&lt;</button>
-                <article class="event-card">
-                    <div class="event-image">
-                        <img src="images/events/event1.jpg" alt="Event 1" width="500">
-                    </div>
-                    <div class="event-info">
-                        <h3>Community Baptism & Recommitment Service</h3>
-                        <p>Saturday, October 18, 2026 | 10:30 AM - 12:30 PM</p>
-                        <button>
+                <button class="slider-btn prev" aria-label="Previous event">&lt;</button>
+                <div class="events-track">
+                    <article class="event-card">
+                        <div class="event-image">
+                            <img src="images/events/event1.jpg" alt="Community Baptism and Recommitment Service" width="500">
+                        </div>
+                        <div class="event-info">
+                            <h3>Community Baptism & Recommitment Service</h3>
+                            <p>Saturday, October 18, 2026 | 10:30 AM - 12:30 PM</p>
                             <a href="events.html" class="btn">Find Out More</a>
-                        </button>
-                    </div>
-                </article>
-                <article class="event-card">
-                    <div class="event-image">
-                        <img src="images/events/event2.jpg" alt="Event 2" width="500">
-                    </div>
-                    <div class="event-info">
-                        <h3>Night of Praise & Prayer</h3>
-                        <p>Saturday, October 25, 2026 | 7:00 PM - 9:00 PM</p>
-                        <button>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-image">
+                            <img src="images/events/event2.jpg" alt="Night of Praise and Prayer" width="500">
+                        </div>
+                        <div class="event-info">
+                            <h3>Night of Praise & Prayer</h3>
+                            <p>Saturday, October 25, 2026 | 7:00 PM - 9:00 PM</p>
                             <a href="events.html" class="btn">Find Out More</a>
-                        </button>
-                    </div>
-                </article>
-                <br>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-image">
+                            <img src="images/events/event3.jpg" alt="Community Health and Wellness Expo" width="500">
+                        </div>
+                        <div class="event-info">
+                            <h3>Community Health & Wellness Expo</h3>
+                            <p>Saturday, November 8, 2026 | 9:00 AM - 1:00 PM</p>
+                            <a href="events.html" class="btn">Find Out More</a>
+                        </div>
+                    </article>
+                </div>
+                <button class="slider-btn next" aria-label="Next event">&gt;</button>
+            </div>
+            <div class="events-cta">
+                <a href="events.html" class="btn btn-outline">View All Events</a>
+            </div>
+        </section>
+
+        <!-- Testimonials: social proof for first-time visitors -->
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Church Family Says</h2>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <p>"I walked in not knowing a single person and left with a whole church family. Everyone made room for me."</p>
+                    <cite>Thandiwe M. &mdash; Member since 2019</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"The Bible study groups helped me actually understand Scripture, not just read it. It changed how I pray."</p>
+                    <cite>Sipho N. &mdash; Member since 2021</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Pathfinders gave my kids friends, discipline, and a real love for the outdoors and for God."</p>
+                    <cite>Naledi K. &mdash; Parent</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Encouragement + prayer request, side by side -->
+        <section class="encouragement" id="encouragement">
+            <div class="verse-block">
+                <blockquote>
+                    <p>"Come unto me, all ye that labour and are heavy laden, and I will give you rest."</p>
+                    <cite>Matthew 11:28, KJV</cite>
+                </blockquote>
+            </div>
+            <div class="prayer-block">
+                <h3>Need Prayer?</h3>
+                <p>Our prayer team would be honoured to stand with you. No request is too big or too small.</p>
+                <a href="contact.html" class="btn">Submit A Prayer Request</a>
+            </div>
+        </section>
+
+        <!-- Giving promo -->
+        <section class="give" id="give">
+            <h2>Give Cheerfully</h2>
+            <p class="section-intro">Your tithes and offerings sustain our ministry and outreach here in Durban.</p>
+            <div class="give-grid">
+                <div class="give-card">
+                    <h3>Tithes &amp; Offerings</h3>
+                    <p>Faithfully return what belongs to God and support the ongoing work of the local church.</p>
+                    <a href="donate.html" class="btn">Give Now</a>
+                </div>
+                <div class="give-card">
+                    <h3>ADRA &amp; Community Outreach</h3>
+                    <p>Help fund food parcels, health screenings and relief efforts for families in our community.</p>
+                    <a href="donate.html" class="btn">Give Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter signup -->
+        <section class="newsletter" id="newsletter">
+            <h2>Stay Connected</h2>
+            <p>Get weekly updates on services, events and prayer needs, straight to your inbox.</p>
+            <!-- TODO: wire this form up to a real mailing list provider -->
+            <form class="newsletter-form" action="#" method="POST">
+                <label for="newsletter-name" class="visually-hidden">Full name</label>
+                <input type="text" id="newsletter-name" name="name" placeholder="Full name" required>
+
+                <label for="newsletter-email" class="visually-hidden">Email address</label>
+                <input type="email" id="newsletter-email" name="email" placeholder="Email address" required>
+
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Visit / location -->
+        <section class="visit" id="visit">
+            <h2>Plan Your Visit</h2>
+            <div class="visit-grid">
+                <div class="visit-details">
+                    <p><strong>Address:</strong> 38 Keits Ave, Bulwer, Berea, 4083</p>
+                    <p><strong>Phone:</strong> +27 74 954 8080</p>
+                    <p><strong>Email:</strong> info@durbancentralsda.org</p>
+                    <p><strong>Sabbath School:</strong> 9:00 AM &nbsp;|&nbsp; <strong>Divine Service:</strong> 10:30 AM</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Durban+Central+SDA+Church+Durban" class="btn" target="_blank" rel="noopener">Get Directions</a>
+                </div>
+                <div class="visit-map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Durban%20Central%2C%20Durban%2C%20South%20Africa&output=embed"
+                        width="500" height="350" style="border:0;" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Map to Durban Central SDA Church">
+                    </iframe>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <div class="footer-copyright">
-            <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+        <div class="footer-columns">
+            <div class="footer-col footer-about">
+                <h4>Durban Central SDA Church</h4>
+                <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-times">
+                <h4>Service Times</h4>
+                <ul>
+                    <li>Sabbath School: Sat, 9:00 AM</li>
+                    <li>Divine Service: Sat, 10:30 AM</li>
+                    <li>Prayer Meeting: Wed, 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li>38 Keits Ave, Bulwer, Berea, 4083</li>
+                    <li>+27 74 954 8080</li>
+                    <li>info@durbancentralsda.org</li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-social">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+            </div>
+            <!-- TODO: ADD links-->
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
         </div>
     </footer>
     <script src="js/script.js"></script>

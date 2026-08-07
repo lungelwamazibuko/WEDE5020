@@ -68,8 +68,8 @@ The website is being developed using HTML5, CSS3, and JavaScript while following
 | Research and Planning | ✅ Completed |
 | Website Wireframes | ✅ Completed |
 | UI/UX Prototype | ✅ Completed |
-| HTML Structure | 🚧 In Progress |
-| CSS Styling | ⏳ Pending  |
+| HTML Structure | ✅ Completed |
+| CSS Styling | 🚧 In Progress  |
 | JavaScript Functionality | ⏳ Pending |
 | Testing | ⏳ Pending |
 | Final Submission | ⏳ Pending |

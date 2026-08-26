@@ -1,1 +1,116 @@
-body{font-family:Arial,sans-serif;}
+
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  /* color: #222; */
+  /* background-color: #fff; */
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4, p { margin-top: 0; }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  padding: .75rem 1rem;
+  background-color: #fff;
+}
+
+.skip-link:focus { top: 1rem; z-index: 10; }
+
+header {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 18px clamp(1.25rem, 5.5vw, 5rem);
+  background-color: #274e7d ;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  min-height: 32px;
+  overflow: hidden;
+  font-size: 0;
+  background-color: #274e7d;
+}
+
+.logo img { width: auto; height: auto; object-fit: contain; }
+
+nav {
+    background-color: #274e7d;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(.75rem, 2vw, 2.5rem);
+  min-width: min(48vw, 520px);
+  margin: 0;
+  padding: 9px 1rem;
+  list-style: none;
+  font-size: .72rem;
+  text-transform: uppercase;
+  background-color: #274e7d;
+  color: #fff; */
+}
+
+.nav-cta { font-weight: 700; }
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(280px, .85fr) 1.15fr;
+  min-height: 300px;
+  padding: 28px clamp(2.5rem, 7vw, 6.5rem);
+  /* background-color: #777; */
+}
+
+.hero-content {
+  align-self: center;
+  max-width: 370px;
+  padding: 52px 38px 28px;
+  text-align: center;
+  /* background-color: #eee; */
+}
+
+.hero-badge, .hero-content h1, .hero-content p { font-size: .75rem; }
+
+.hero-content h1 { margin: 8px 0; font-weight: 500; text-transform: uppercase; }
+
+.hero-content p { display: none; }
+
+.hero-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+
+.hero-image img {
+  width: min(100%, 520px);
+  height: 220px;
+  object-fit: cover;
+  background-color: #777;
+}
+
+.service-times {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1.15fr 1.15fr;
+  gap: 26px 30px;
+  align-items: center;
+  padding: 34px clamp(2.5rem, 5.5vw, 5rem);
+  /* background-color: #ddd; */
+}
+

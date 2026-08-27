@@ -185,6 +185,7 @@ nav a:focus-visible::after {
 nav .nav-cta {
   padding: 0.55rem 1rem;
   background-color: #C9A227;
+  border-radius: 2rem;
   color: #1F3A5F;
   font-weight: 700;
 }
@@ -212,7 +213,7 @@ nav .nav-cta:focus-visible {
   padding: 0.65rem 1.25rem;
   border: 2px solid #C9A227;
   background-color: #C9A227;
-  color: #1F3A5F;
+  color: #ffffff;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -233,7 +234,7 @@ nav .nav-cta:focus-visible {
 .btn-outline {
   background-color: transparent;
   border-color: #1F3A5F;
-  color: #1F3A5F;
+  color: #C9A227;
 }
 
 .btn-outline:hover,
@@ -262,7 +263,6 @@ nav .nav-cta:focus-visible {
   max-width: 430px;
   padding: 35px;
   text-align: center;
-  background-color: #F5F1E8;
 }
 
 .hero-badge {
@@ -277,7 +277,7 @@ nav .nav-cta:focus-visible {
 
 .hero-content h1 {
   margin: 8px 0 18px;
-  color: #1F3A5F;
+  color: #FFFFFF;
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   line-height: 1.2;
   font-weight: 600;
@@ -287,7 +287,7 @@ nav .nav-cta:focus-visible {
 .hero-content p {
   display: block;
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: #FFFFFF;
   font-size: 0.9rem;
 }
 
@@ -532,6 +532,10 @@ nav .nav-cta:focus-visible {
 /* =========================================================
    ABOUT BUTTONS
    ========================================================= */
+.quick-links {
+    
+    margin :auto
+}
 
 .quick-links .btn {
     display: flex;
@@ -540,6 +544,7 @@ nav .nav-cta:focus-visible {
     justify-content: center;
 
     min-height: 42px;
+    
 
     padding: 12px 18px;
 
@@ -571,8 +576,6 @@ nav .nav-cta:focus-visible {
 
     color: #FFFFFF;
 }
-}
-
 
 /* =========================================================
    MINISTRIES

@@ -105,7 +105,7 @@ header {
   background-color: #1F3A5F;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Keeps it on top of other elements */
+  z-index: 1000;
 }
 
 .logo {
@@ -213,7 +213,7 @@ nav .nav-cta:focus-visible {
   padding: 0.65rem 1.25rem;
   border: 2px solid #C9A227;
   background-color: #C9A227;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -285,7 +285,8 @@ nav .nav-cta:focus-visible {
 }
 
 .hero-content p {
-  display: block;
+  display: grid;
+  place-items: center;
   margin-bottom: 1.5rem;
   color: #FFFFFF;
   font-size: 0.9rem;
@@ -308,6 +309,76 @@ nav .nav-cta:focus-visible {
   width: min(100%, 600px);
   height: 270px;
   object-fit: cover;
+}
+
+
+/* =========================================================
+   ABOUT PAGE HERO
+   ========================================================= */
+
+.hero-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  padding: 0 30px;
+  background-image:
+    linear-gradient(
+      rgba(31, 58, 95, 0.35),
+      rgba(31, 58, 95, 0.35)
+    ),
+    url("../images/orignal-images/dcy_big_4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.hero-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.hero-page .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-page .breadcrumb {
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-page .breadcrumb a {
+  color: #C9A227;
+}
+
+.hero-page h1 {
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hero-page .hero-content > p:last-of-type {
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+}
+
+.hero-page .btn {
+  min-width: 150px;
+  margin-top: 10px;
 }
 
 
@@ -350,147 +421,85 @@ nav .nav-cta:focus-visible {
 
 
 /* =========================================================
-   ABOUT SECTION
+   HOMEPAGE ABOUT SECTION
    ========================================================= */
 
 .about {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-
-    align-items: center;
-
-    min-height: 430px;
-
-    padding: 55px clamp(2rem, 7vw, 6rem);
-
-    gap: clamp(3rem, 7vw, 7rem);
-
-    overflow: hidden;
-
-    
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  min-height: 430px;
+  padding: 55px clamp(2rem, 7vw, 6rem);
+  overflow: hidden;
+  background-color: #1F3A5F;
 }
 
+.about::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background-image: url("../images/orignal-images/congregation_outside.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  transform: scale(1.05);
+  z-index: 0;
+}
 
-/* =========================================================
-   IMAGE OVERLAY
-   ========================================================= */
+.about::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(31, 58, 95, 0.25);
+  z-index: 1;
+}
 
 .about-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 0;
-
-    background-color: rgba(31, 58, 95, 0.35);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(31, 58, 95, 0.35);
 }
 
-
-/* =========================================================
-   ABOUT TEXT PANEL
-   ========================================================= */
-
-.about {
-    position: relative;
-    overflow: hidden;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
-
-    min-height: 430px;
-    padding: 55px 6rem;
-
-    background-color: #1F3A5F;
+.about-text {
+  position: relative;
+  z-index: 2;
+  padding: 38px 42px;
+  color: #FFFFFF;
+  background-color: #1F3A5F;
 }
+
 .about-text h2 {
-    margin: 0 0 18px;
-
-    color: #FFFFFF;
-
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-
-    line-height: 1.2;
-
-    font-weight: 600;
+  margin: 0 0 18px;
+  color: #FFFFFF;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 .about-text p {
-    margin: 0 0 14px;
-
-    color: #FFFFFF;
-
-    font-size: 0.85rem;
-
-    line-height: 1.6;
+  margin: 0 0 14px;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 .about-text p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Blurred background image */
-.about::before {
-    content: "";
-
-    position: absolute;
-    inset: -20px;
-
-    background-image: url("../images/orignal-images/congregation_outside.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: blur(6px);
-
-    transform: scale(1.05);
-
-    z-index: 0;
+.about-image {
+  position: relative;
+  z-index: 2;
 }
 
-/* Optional dark overlay */
-.about::after {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background-color: rgba(31, 58, 95, 0.25);
-
-    z-index: 1;
-}
-
-
-/* Keep text sharp */
-.about-text {
-    position: relative;
-    z-index: 2;
-
-    background-color: #1F3A5F;
-
-    padding: 38px 42px;
-
-    color: #FFFFFF;
-}
-
-
-/* Keep buttons sharp */
-.quick-links {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.quick-links .btn {
-    background-color: #C9A227;
-    border: 2px solid #C9A227;
-    color: #1F3A5F;
+.about-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 
@@ -499,83 +508,432 @@ nav .nav-cta:focus-visible {
    ========================================================= */
 
 .quick-links {
-    position: relative;
-
-    z-index: 1;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
-
-    gap: 18px;
-
-    width: 100%;
-    max-width: 500px;
-}
-
-.quick-links {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 .quick-links .btn {
-    background-color: #C9A227;
-    border: 2px solid #C9A227;
-    color: #1F3A5F;
-}
-
-
-/* =========================================================
-   ABOUT BUTTONS
-   ========================================================= */
-.quick-links {
-    
-    margin :auto
-}
-
-.quick-links .btn {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    min-height: 42px;
-    
-
-    padding: 12px 18px;
-
-    background-color: #C9A227;
-
-    border: 2px solid #C9A227;
-
-    color: #1F3A5F;
-
-    font-size: 0.72rem;
-
-    font-weight: 700;
-
-    text-align: center;
-
-    text-transform: uppercase;
-
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 12px 18px;
+  background-color: #C9A227;
+  border: 2px solid #C9A227;
+  color: #1F3A5F;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .quick-links .btn:hover,
 .quick-links .btn:focus-visible {
-    background-color: #1F3A5F;
-
-    border-color: #1F3A5F;
-
-    color: #FFFFFF;
+  background-color: #1F3A5F;
+  border-color: #1F3A5F;
+  color: #FFFFFF;
 }
+
+
+/* =========================================================
+   ABOUT PAGE - OUR STORY
+   ========================================================= */
+
+.our-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 70px 50px;
+  gap: 70px;
+  background-color: #FFFFFF;
+}
+
+.story-text {
+  max-width: 520px;
+}
+
+.story-text h2 {
+  margin-bottom: 20px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 600;
+}
+
+.story-text h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-top: 12px;
+  background-color: #C9A227;
+}
+
+.story-text p {
+  margin-bottom: 18px;
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.story-image {
+  width: 100%;
+}
+
+.story-image img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - MISSION & VISION
+   ========================================================= */
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  background-color: #F5F1E8;
+}
+
+.mv-card {
+  padding: 40px 35px;
+  background-color: #FFFFFF;
+  border-top: 4px solid #C9A227;
+  text-align: center;
+}
+
+.mv-card h2 {
+  margin-bottom: 18px;
+  color: #1F3A5F;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mv-card p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - CORE VALUES
+   ========================================================= */
+
+.values {
+  padding: 75px clamp(1.5rem, 5vw, 5rem);
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.values > h2 {
+  margin-bottom: 10px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.values > h2::after,
+.beliefs > h2::after,
+.leadership > h2::after,
+.timeline > h2::after,
+.visiting > h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 12px auto 0;
+  background-color: #C9A227;
+}
+
+.section-intro {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #555555;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.value-card {
+  min-height: 170px;
+  padding: 30px 20px;
+  background-color: #F5F1E8;
+  border-bottom: 3px solid #C9A227;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  margin-bottom: 12px;
+  color: #1F3A5F;
+  font-size: 1rem;
+}
+
+.value-card p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - BELIEFS
+   ========================================================= */
+
+.beliefs {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 75px 30px;
+  text-align: center;
+}
+
+.beliefs h2 {
+  margin-bottom: 25px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.beliefs p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  color: #555555;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - LEADERSHIP
+   ========================================================= */
+
+.leadership {
+  padding: 75px clamp(1.5rem, 5vw, 5rem);
+  background-color: #F5F1E8;
+  text-align: center;
+}
+
+.leadership h2 {
+  margin-bottom: 10px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.leader-card {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.leader-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.leader-card h3 {
+  margin: 20px 20px 5px;
+  color: #1F3A5F;
+  font-size: 1rem;
+}
+
+.leader-card .leader-role {
+  margin: 0 20px 10px;
+  color: #C9A227;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.leader-card > p:last-child {
+  margin: 0 20px 25px;
+  color: #555555;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - HISTORY TIMELINE
+   ========================================================= */
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 75px 30px;
+}
+
+.timeline h2 {
+  margin-bottom: 45px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  text-align: center;
+}
+
+.timeline-list {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 45px;
+  list-style: none;
+}
+
+.timeline-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  width: 2px;
+  background-color: #C9A227;
+}
+
+.timeline-list li {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 5px 0 5px 20px;
+}
+
+.timeline-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -39px;
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  border: 3px solid #C9A227;
+  border-radius: 50%;
+}
+
+.timeline-year {
+  display: block;
+  margin-bottom: 6px;
+  color: #C9A227;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.timeline-list p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - VISITING
+   ========================================================= */
+
+.visiting {
+  padding: 75px clamp(1.5rem, 5vw, 5rem);
+  background-color: #F5F1E8;
+  text-align: center;
+}
+
+.visiting h2 {
+  margin-bottom: 10px;
+  color: #1F3A5F;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.visiting-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.visiting-card {
+  padding: 30px 20px;
+  background-color: #FFFFFF;
+  border-top: 3px solid #C9A227;
+}
+
+.visiting-card h3 {
+  margin-bottom: 12px;
+  color: #1F3A5F;
+  font-size: 0.95rem;
+}
+
+.visiting-card p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - CLOSING CTA
+   ========================================================= */
+
+.cta-band {
+  padding: 70px 30px;
+  background-color: #1F3A5F;
+  text-align: center;
+}
+
+.cta-band h2 {
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.cta-band p {
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+}
+
+.cta-band .hero-buttons {
+  justify-content: center;
+}
+
+.cta-band .btn-outline {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
 
 /* =========================================================
    MINISTRIES
@@ -590,12 +948,6 @@ nav .nav-cta:focus-visible {
 .ministries > h2 {
   margin-bottom: 10px;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
-}
-
-.section-intro {
-  max-width: 650px;
-  margin: 0 auto 35px;
-  color: #555555;
 }
 
 .ministries-grid {
@@ -1163,6 +1515,7 @@ input:focus-visible {
 
   .about-text {
     max-width: 700px;
+    margin: 0 auto;
   }
 
   .ministries-grid {
@@ -1194,6 +1547,45 @@ input:focus-visible {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* About page tablet */
+
+  .our-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 35px;
+  }
+
+  .story-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .story-text h2::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .story-image img {
+    height: 350px;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .visiting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -1277,7 +1669,7 @@ input:focus-visible {
   }
 
   .quick-links {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .quick-links .btn {
@@ -1390,6 +1782,104 @@ input:focus-visible {
     flex-wrap: wrap;
   }
 
+  /* About page mobile */
+
+  .hero-page {
+    min-height: 300px;
+    padding: 20px;
+  }
+
+  .hero-page .hero-content {
+    padding: 25px 15px;
+  }
+
+  .hero-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-page .hero-content > p:last-of-type {
+    font-size: 0.82rem;
+  }
+
+  .our-story {
+    min-height: auto;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .story-image img {
+    height: 250px;
+  }
+
+  .mission-vision {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .mv-card {
+    padding: 30px 22px;
+  }
+
+  .values {
+    padding: 50px 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .value-card {
+    min-height: auto;
+  }
+
+  .beliefs {
+    padding: 50px 20px;
+  }
+
+  .leadership {
+    padding: 50px 20px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .leader-card img {
+    height: 300px;
+  }
+
+  .timeline {
+    padding: 50px 20px;
+  }
+
+  .timeline-list {
+    padding-left: 35px;
+  }
+
+  .visiting {
+    padding: 50px 20px;
+  }
+
+  .visiting-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .cta-band {
+    padding: 50px 20px;
+  }
+
+  .cta-band .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-band .btn {
+    width: 100%;
+  }
 }
 
 
@@ -1408,5 +1898,4 @@ input:focus-visible {
   *::after {
     transition: none !important;
   }
-
 }

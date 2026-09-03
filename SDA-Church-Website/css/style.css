@@ -353,26 +353,6 @@ nav .nav-cta:focus-visible {
    ABOUT SECTION
    ========================================================= */
 
-.about {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-
-    align-items: center;
-
-    min-height: 430px;
-
-    padding: 55px clamp(2rem, 7vw, 6rem);
-
-    gap: clamp(3rem, 7vw, 7rem);
-
-    overflow: hidden;
-
-    
-}
-
-
 /* =========================================================
    IMAGE OVERLAY
    ========================================================= */
@@ -477,64 +457,19 @@ nav .nav-cta:focus-visible {
 }
 
 
-/* Keep buttons sharp */
-.quick-links {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.quick-links .btn {
-    background-color: #C9A227;
-    border: 2px solid #C9A227;
-    color: #1F3A5F;
-}
-
-
 /* =========================================================
    QUICK LINKS
    ========================================================= */
 
 .quick-links {
     position: relative;
-
-    z-index: 1;
-
+  z-index: 2;
     display: grid;
-
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
-
+  grid-template-columns: repeat(2, 1fr);
     gap: 18px;
-
     width: 100%;
     max-width: 500px;
-}
-
-.quick-links {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.quick-links .btn {
-    background-color: #C9A227;
-    border: 2px solid #C9A227;
-    color: #1F3A5F;
-}
-
-
-/* =========================================================
-   ABOUT BUTTONS
-   ========================================================= */
-.quick-links {
-    
-    margin :auto
+  margin: auto;
 }
 
 .quick-links .btn {
@@ -1317,9 +1252,6 @@ input:focus-visible {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .events-track .event-card:last-child {
-    display: none;
-  }
 
   .testimonials-grid {
     grid-template-columns: 1fr;
@@ -1451,7 +1383,7 @@ input:focus-visible {
   }
 
   .quick-links {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .quick-links .btn {
@@ -1490,9 +1422,6 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .events-track .event-card:last-child {
-    display: none;
-  }
 
   .slider-btn {
     width: 32px;
@@ -2974,8 +2903,7 @@ input:focus-visible {
   justify-content: center;
   padding: 80px 6%;
   text-align: center;
-  background:
-    linear-gradient(rgba(31, 58, 95, 0.84), rgba(31, 58, 95, 0.84)),
+  background-color: #1F3A5F;
 }
 
 .hero-page .hero-content {
@@ -3741,4 +3669,31 @@ input:focus-visible {
   .gallery-item:hover img {
     transform: none;
   }
+}
+
+/* =========================================================
+   SHARED RESPONSIVE OVERRIDES
+   ========================================================= */
+
+.watch-live-media iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+.events-slider .events-track {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.events-slider .event-card {
+  flex: 0 0 calc((100% - 25px) / 2);
+}
+
+.slider-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
 }

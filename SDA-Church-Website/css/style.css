@@ -3697,3 +3697,559 @@ input:focus-visible {
   cursor: not-allowed;
   opacity: 0.45;
 }
+
+
+/* =========================================================
+   GIVE PAGE CONTENT
+   ========================================================= */
+
+/* ---------- Give Introduction ---------- */
+
+.give-intro {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.give-intro > p {
+    max-width: 800px;
+    margin: 0 auto 18px;
+    color: #4f5d68;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.give-intro > p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Bible verse */
+
+.verse {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 30px 35px;
+    background: #f5f7f9;
+    border-left: 4px solid #D6A72C;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.verse p {
+    margin: 0 0 12px;
+    color: #1F3A5F;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.verse cite {
+    display: block;
+    color: #66737e;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   WAYS TO GIVE
+   ========================================================= */
+
+.giving-options {
+    padding: 75px 5%;
+    background: #f5f7f9;
+}
+
+.giving-options h2 {
+    margin: 0 0 8px;
+    color: #1F3A5F;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.section-intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+    color: #65727d;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.giving-grid {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.giving-card {
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 310px;
+
+    background: #ffffff;
+    border: 1px solid #e1e6ea;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(31, 58, 95, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.giving-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(31, 58, 95, 0.12);
+}
+
+.giving-card h3 {
+    margin: 0 0 15px;
+    color: #1F3A5F;
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+
+.giving-card p {
+    flex: 1;
+    margin: 0 0 25px;
+    color: #5c6973;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- Donate Button ---------- */
+
+.giving-card .btn {
+    width: 100%;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+    padding: 11px 20px;
+
+    background: #1F3A5F;
+    border: 2px solid #1F3A5F;
+    border-radius: 5px;
+
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    text-align: center;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn:hover {
+    background: #152b46;
+    border-color: #152b46;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   HOW TO GIVE
+   ========================================================= */
+
+.how-to-give {
+    padding: 75px 5%;
+    background: #ffffff;
+}
+
+.how-to-give h2 {
+    margin: 0 0 40px;
+    color: #1F3A5F;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.give-methods {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.give-method {
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid #e1e6ea;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(31, 58, 95, 0.06);
+}
+
+.give-method h3 {
+    margin: 0 0 12px;
+    color: #1F3A5F;
+    font-size: 1.25rem;
+}
+
+.give-method p {
+    margin: 0 0 18px;
+    color: #5c6973;
+    line-height: 1.7;
+}
+
+.give-method .btn {
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   BANK DETAILS
+   ========================================================= */
+
+.bank-details {
+    margin: 20px 0 0;
+    padding: 18px 20px;
+
+    background: #f5f7f9;
+    border-radius: 7px;
+}
+
+.bank-details li {
+    padding: 9px 0;
+
+    color: #4f5d68;
+    font-size: 0.92rem;
+    line-height: 1.5;
+
+    border-bottom: 1px solid #e1e6ea;
+}
+
+.bank-details li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.bank-details li:first-child {
+    padding-top: 0;
+}
+
+.bank-details strong {
+    color: #1F3A5F;
+}
+
+
+/* =========================================================
+   QR CODE
+   ========================================================= */
+
+.give-method img {
+    width: 150px;
+    height: 150px;
+
+    margin-top: 10px;
+    padding: 7px;
+
+    background: #ffffff;
+    border: 1px solid #dce2e7;
+    border-radius: 6px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   GIVING FAQ
+   ========================================================= */
+
+.give-faq {
+    width: min(950px, 90%);
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.give-faq h2 {
+    margin: 0 0 35px;
+    color: #1F3A5F;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+/* ---------- FAQ Item ---------- */
+
+.faq-item {
+    margin-bottom: 12px;
+
+    background: #ffffff;
+    border: 1px solid #dfe5ea;
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- FAQ Question ---------- */
+
+.faq-item summary {
+    position: relative;
+
+    padding: 20px 55px 20px 22px;
+
+    color: #1F3A5F;
+    background: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    list-style: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 22px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #D6A72C;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary:hover {
+    background: #f5f7f9;
+}
+
+
+/* ---------- FAQ Answer ---------- */
+
+.faq-item p {
+    margin: 0;
+    padding: 0 22px 22px;
+
+    color: #5c6973;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    border-top: 1px solid #edf0f2;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .giving-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .give-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .give-intro {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .give-intro > p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .verse {
+        margin-top: 30px;
+        padding: 22px;
+    }
+
+    .verse p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+
+    .giving-options,
+    .how-to-give {
+        padding: 55px 5%;
+    }
+
+    .giving-options h2,
+    .how-to-give h2,
+    .give-faq h2 {
+        font-size: 1.9rem;
+    }
+
+    .section-intro {
+        margin-bottom: 30px;
+    }
+
+    .giving-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .giving-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+
+    .give-methods {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .give-method {
+        padding: 25px;
+    }
+
+
+    .bank-details {
+        padding: 16px;
+    }
+
+    .bank-details li {
+        font-size: 0.88rem;
+    }
+
+
+    .give-faq {
+        width: 90%;
+        padding: 55px 0;
+    }
+
+    .faq-item summary {
+        padding: 17px 50px 17px 18px;
+        font-size: 0.95rem;
+    }
+
+    .faq-item summary::after {
+        right: 18px;
+    }
+
+    .faq-item p {
+        padding: 0 18px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .give-intro {
+        padding: 40px 0;
+    }
+
+    .verse {
+        padding: 18px;
+        border-left-width: 3px;
+    }
+
+    .verse p {
+        font-size: 0.95rem;
+    }
+
+    .giving-options,
+    .how-to-give {
+        padding: 45px 5%;
+    }
+
+    .giving-card,
+    .give-method {
+        padding: 20px;
+    }
+
+    .giving-options h2,
+    .how-to-give h2,
+    .give-faq h2 {
+        font-size: 1.7rem;
+    }
+
+    .bank-details {
+        padding: 14px;
+    }
+
+    .bank-details li {
+        font-size: 0.82rem;
+        word-break: break-word;
+    }
+
+    .give-method img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.btn:focus-visible,
+.faq-item summary:focus-visible {
+    outline: 3px solid #D6A72C;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .giving-card,
+    .btn,
+    .faq-item summary {
+        transition: none;
+    }
+}
+

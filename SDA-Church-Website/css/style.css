@@ -1,6 +1,16 @@
 /* =========================================================
-   GLOBAL
-   ========================================================= */
+  DURBAN CENTRAL SDA CHURCH WEBSITE
+
+  Stylesheet structure:
+  1. Shared foundation and reusable components
+  2. Homepage sections
+  3. About, Events, and Ministries page sections
+  4. Give page sections
+  5. Responsive and motion preferences
+
+  Keep page-specific selectors scoped to their page components so
+  changes do not alter unrelated pages.
+  ========================================================= */
 
 * {
   box-sizing: border-box;
@@ -105,7 +115,7 @@ header {
   background-color: #1F3A5F;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Keeps it on top of other elements */
+  z-index: 1000;
 }
 
 .logo {
@@ -350,12 +360,8 @@ nav .nav-cta:focus-visible {
 
 
 /* =========================================================
-   ABOUT SECTION
-   ========================================================= */
-
-/* =========================================================
-   IMAGE OVERLAY
-   ========================================================= */
+  HOMEPAGE ABOUT SECTION
+  ========================================================= */
 
 .about-overlay {
     position: absolute;
@@ -431,7 +437,7 @@ nav .nav-cta:focus-visible {
     z-index: 0;
 }
 
-/* Optional dark overlay */
+/* Add a contrast overlay above the background image. */
 .about::after {
     content: "";
 
@@ -444,7 +450,7 @@ nav .nav-cta:focus-visible {
 }
 
 
-/* Keep text sharp */
+/* Keep content above the image and overlay layers. */
 .about-text {
     position: relative;
     z-index: 2;
@@ -1514,10 +1520,9 @@ input:focus-visible {
 
 }
 /* =========================================================
-   ABOUT PAGE
-   These rules extend the existing site stylesheet and are
-   intentionally scoped to the About page components.
-   ========================================================= */
+  ABOUT PAGE
+  Page-specific layout and component styles.
+  ========================================================= */
 
 /* About-page hero */
 .hero.hero-page {
@@ -2082,9 +2087,9 @@ input:focus-visible {
 }
 
 /* =========================================================
-   EVENTS PAGE
-   Scoped styles for events.html
-   ========================================================= */
+  EVENTS PAGE
+  Page-specific layout and component styles.
+  ========================================================= */
 
 
 /* =========================================================
@@ -2892,9 +2897,7 @@ input:focus-visible {
    MINISTRIES PAGE
    ========================================================= */
 
-/* ---------------------------------------------------------
-   PAGE HERO
-   --------------------------------------------------------- */
+/* PAGE HERO */
 
 .hero.hero-page {
   min-height: 430px;
@@ -2950,9 +2953,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   WELCOME
-   --------------------------------------------------------- */
+/* WELCOME */
 
 .welcome {
   display: grid;
@@ -3003,9 +3004,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   PASTORS
-   --------------------------------------------------------- */
+/* PASTORS */
 
 .pastors {
   padding: 80px 6%;
@@ -3069,9 +3068,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   MINISTRIES
-   --------------------------------------------------------- */
+/* MINISTRY CARDS */
 
 .ministries {
   padding: 80px 6%;
@@ -3158,9 +3155,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   BIBLE STUDY
-   --------------------------------------------------------- */
+/* BIBLE STUDY */
 
 .bible-study {
   display: grid;
@@ -3226,9 +3221,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   GALLERY
-   --------------------------------------------------------- */
+/* GALLERY */
 
 .gallery {
   padding: 80px 6%;
@@ -3242,7 +3235,7 @@ input:focus-visible {
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.section-intro {
+.gallery .section-intro {
   max-width: 650px;
   margin: 0 auto 45px;
   color: #333333;
@@ -3289,9 +3282,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   UPCOMING EVENTS
-   --------------------------------------------------------- */
+/* UPCOMING EVENTS */
 
 .events {
   padding: 80px 6%;
@@ -3405,9 +3396,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   CTA BAND
-   --------------------------------------------------------- */
+/* CALL TO ACTION */
 
 .cta-band {
   padding: 70px 6%;
@@ -3645,9 +3634,7 @@ input:focus-visible {
 }
 
 
-/* ---------------------------------------------------------
-   ACCESSIBILITY / REDUCED MOTION
-   --------------------------------------------------------- */
+/* ACCESSIBILITY AND MOTION */
 
 @media (prefers-reduced-motion: reduce) {
   .ministry-card,
@@ -3672,8 +3659,8 @@ input:focus-visible {
 }
 
 /* =========================================================
-   SHARED RESPONSIVE OVERRIDES
-   ========================================================= */
+  SHARED RESPONSIVE ENHANCEMENTS
+  ========================================================= */
 
 .watch-live-media iframe {
   display: block;
@@ -3703,7 +3690,7 @@ input:focus-visible {
    GIVE PAGE CONTENT
    ========================================================= */
 
-/* ---------- Give Introduction ---------- */
+/* Give introduction and Bible verse. */
 
 .give-intro {
     width: min(900px, 90%);
@@ -3723,8 +3710,6 @@ input:focus-visible {
 .give-intro > p:last-of-type {
     margin-bottom: 0;
 }
-
-/* Bible verse */
 
 .verse {
     max-width: 800px;
@@ -3770,7 +3755,7 @@ input:focus-visible {
     font-size: 2.3rem;
 }
 
-.section-intro {
+.giving-options .section-intro {
   max-width: 650px;
   margin: 0 auto 40px;
     color: #65727d;
@@ -3827,13 +3812,13 @@ input:focus-visible {
 }
 
 
-/* ---------- Donate Button ---------- */
-
+/* Keep payment-provider button styling local to the Give page. */
 .giving-card .btn {
     width: 100%;
 }
 
-.btn {
+.giving-card .btn,
+.give-method .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3857,7 +3842,8 @@ input:focus-visible {
         transform 0.25s ease;
 }
 
-.btn:hover {
+.giving-card .btn:hover,
+.give-method .btn:hover {
     background: #152b46;
     border-color: #152b46;
     color: #ffffff;
@@ -3990,7 +3976,7 @@ input:focus-visible {
 }
 
 
-/* ---------- FAQ Item ---------- */
+/* FAQ item container. */
 
 .faq-item {
     margin-bottom: 12px;
@@ -4007,7 +3993,7 @@ input:focus-visible {
 }
 
 
-/* ---------- FAQ Question ---------- */
+/* FAQ question and disclosure indicator. */
 
 .faq-item summary {
     position: relative;
@@ -4054,7 +4040,7 @@ input:focus-visible {
 }
 
 
-/* ---------- FAQ Answer ---------- */
+/* FAQ answer content. */
 
 .faq-item p {
     margin: 0;

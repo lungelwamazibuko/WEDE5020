@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="js"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Support the ministry, outreach and mission of Durban Central SDA Church. Give online, via EFT, mobile payment, or in person — and find answers to common giving questions.">
+    <meta name="theme-color" content="#0b2f5e">
     <link rel="icon" href="images/logo/icon.png" type="image/png">
     <title>Give | Durban Central SDA Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo/image_720984e.jpg" alt="Church Logo" width="150" height="150">Durban Central SDA Church</a>
-        </div>
-        <nav>
+    <div class="topbar">
+        <div class="wrap">
+            <p>Sabbath School 9:00 AM · Divine Service 10:30 AM · 38 Keits Avenue, Berea, Durban</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ministries.html">Ministries</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="give.html" class="nav-cta">Give</a></li>
+                <li><a href="index.html#watch-live">Watch Live</a></li>
+                <li><a href="index.html#visit">Plan A Visit</a></li>
+                <li><a href="contact.html">Prayer Request</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-mark" src="images/logo/image_720984e.jpg" alt="" width="48" height="48">
+                <span class="brand-text">
+                    <span class="brand-name">Durban Central SDA Church</span>
+                    <span class="brand-sub">Seventh-day Adventist</span>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="nav-cta" aria-current="page">Give</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main id="main-content">
-        <section class="hero hero-page">
+        <section class="hero hero-page dark">
             <div class="hero-content">
                 <p class="breadcrumb"><a href="index.html">Home</a> / Give</p>
                 <h1>Give</h1>
@@ -36,104 +61,85 @@
             </div>
         </section>
 
-        <section class="give-intro">
-            <p>
-                Your faithful giving helps support the ministry, outreach programmes,
-                community services, and the mission of our church. Thank you for your generosity.
-            </p>
-            <p>
-                We're committed to using every gift wisely and transparently, in service of
-                our mission here in Durban and beyond.
-            </p>
-            <blockquote class="verse">
-                <p>"Every man according as he purposeth in his heart, so let him give; not
-                grudgingly, or of necessity: for God loveth a cheerful giver."</p>
-                <cite>2 Corinthians 9:7, KJV</cite>
-            </blockquote>
-        </section>
-
-        <!-- Giving categories -->
         <section class="giving-options" id="ways-to-give">
             <h2>Ways To Give</h2>
             <p class="section-intro">Choose where your gift goes.</p>
             <div class="giving-grid">
-                <article class="giving-card">
+                <article class="giving-card reveal">
                     <h3>Tithes &amp; Offerings</h3>
                     <p>Faithfully return the tithe and give offerings that fund the day-to-day ministry of our local church.</p>
-                    <a href="https://payfast.co.za" class="btn">Donate Now</a>
+                    <a href="https://payfast.co.za" class="btn" target="_blank" rel="noopener">Donate Now</a>
                 </article>
-                <article class="giving-card">
+                <article class="giving-card reveal">
                     <h3>ADRA &amp; Community Outreach</h3>
                     <p>Support food parcels, health screenings and relief efforts for families in need across Durban.</p>
-                    <a href="https://payfast.co.za" class="btn">Donate Now</a>
+                    <a href="https://payfast.co.za" class="btn" target="_blank" rel="noopener">Donate Now</a>
                 </article>
-                <article class="giving-card">
+                <article class="giving-card reveal">
                     <h3>Building Fund</h3>
                     <p>Help maintain and improve our church facilities for generations to come.</p>
-                    <a href="https://payfast.co.za" class="btn">Donate Now</a>
+                    <a href="https://payfast.co.za" class="btn" target="_blank" rel="noopener">Donate Now</a>
                 </article>
-                <article class="giving-card">
+                <article class="giving-card reveal">
                     <h3>Mission &amp; Global Outreach</h3>
                     <p>Partner with Adventist mission work spreading the gospel around the world.</p>
-                    <a href="https://payfast.co.za" class="btn">Donate Now</a>
+                    <a href="https://payfast.co.za" class="btn" target="_blank" rel="noopener">Donate Now</a>
                 </article>
             </div>
         </section>
 
-        <!-- Available giving methods -->
         <section class="how-to-give" id="how-to-give">
-            <h2 class=>How To Give</h2>
+            <h2>How To Give</h2>
             <div class="give-methods">
-                <div class="give-method">
+                <div class="give-method reveal">
                     <h3>Online / Card</h3>
                     <p>Give quickly and securely using your card.</p>
-                    <a href="https://payfast.co.za" class="btn">Donate Now</a>
+                    <a href="https://payfast.co.za" class="btn" target="_blank" rel="noopener">Donate Now</a>
                 </div>
-                <div class="give-method">
+                <div class="give-method reveal">
                     <h3>EFT / Bank Transfer</h3>
                     <p>Transfer directly using the details below, with your name as reference.</p>
                     <ul class="bank-details">
-                        <li><strong>Account Name:</strong> Durban Central SDA Church</li>
-                        <li><strong>Bank:</strong> ABSA</li>
-                        <li><strong>Account Number:</strong> 9876543210</li>
-                        <li><strong>Branch Code:</strong> 632005</li>
-                        <li><strong>Reference:</strong> Your Name + Fund (e.g. "Tithe")</li>
+                        <li><strong>Account Name</strong> Durban Central SDA Church</li>
+                        <li><strong>Bank</strong> ABSA</li>
+                        <li><strong>Account Number</strong> 9876543210<button type="button" class="copy-btn" aria-label="Copy account number">Copy</button></li>
+                        <li><strong>Branch Code</strong> 632005<button type="button" class="copy-btn" aria-label="Copy branch code">Copy</button></li>
+                        <li><strong>Reference</strong> Your Name + Fund (e.g. "Tithe")</li>
                     </ul>
                 </div>
-                <div class="give-method">
+                <div class="give-method reveal">
                     <h3>Mobile Payment</h3>
                     <p>Scan to give instantly using SnapScan or Payfast.</p>
-                    <img src="images/qr-code.png" alt="Scan to give via SnapScan or Payfast" width="150">
+                    <img src="images/qr-code.png" alt="Scan to give via SnapScan or Payfast" loading="lazy">
                 </div>
-                <div class="give-method">
+                <div class="give-method reveal">
                     <h3>In Person</h3>
                     <p>Give during the offering at Divine Service, or drop an envelope at the Welcome Desk.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Frequently asked questions using native details elements -->
         <section class="give-faq" id="faq">
             <h2>Giving FAQs</h2>
-            <details class="faq-item">
+            <details class="faq-item reveal">
                 <summary>Is my giving tax deductible?</summary>
                 <p>Tax treatment of donations varies, so please contact our church treasurer for a giving statement and guidance for your situation.</p>
             </details>
-            <details class="faq-item">
+            <details class="faq-item reveal">
                 <summary>Can I give anonymously?</summary>
                 <p>Yes. Simply mark your envelope or EFT reference as "Anonymous" and leave out any personal details.</p>
             </details>
-            <details class="faq-item">
+            <details class="faq-item reveal">
                 <summary>Can I set up recurring giving?</summary>
                 <p>Yes. Speak to our church treasurer about setting up a recurring EFT or debit order for regular giving.</p>
             </details>
-            <details class="faq-item">
+            <details class="faq-item reveal">
                 <summary>Where can I get a giving statement?</summary>
                 <p>Contact the church office and we'll issue a statement of your giving for the year.</p>
             </details>
         </section>
 
-        <section class="cta-band">
+        <section class="cta-band dark">
             <h2>Every Cent Counts</h2>
             <p>We're committed to using every gift faithfully and transparently. Questions about giving? We're happy to help.</p>
             <a href="contact.html" class="btn">Contact Us</a>
@@ -141,50 +147,53 @@
     </main>
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-col footer-about">
-                <h4>Durban Central SDA Church</h4>
-                <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+        <div class="wrap">
+            <div class="footer-columns">
+                <div class="footer-col footer-about">
+                    <h4>Durban Central SDA Church</h4>
+                    <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-times">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sabbath School: Sat, 9:00 AM</li>
+                        <li>Divine Service: Sat, 10:30 AM</li>
+                        <li>Prayer Meeting: Wed, 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>38 Keits Avenue, Berea, Durban</li>
+                        <li><a href="tel:+27749548080">+27 74 954 8080</a></li>
+                        <li><a href="mailto:info@durbancentralsda.org">info@durbancentralsda.org</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="ministries.html">Ministries</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="give.html">Give</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col footer-times">
-                <h4>Service Times</h4>
-                <ul>
-                    <li>Sabbath School: Sat, 9:00 AM</li>
-                    <li>Divine Service: Sat, 10:30 AM</li>
-                    <li>Prayer Meeting: Wed, 6:00 PM</li>
-                </ul>
-            </div>
-            <div class="footer-col footer-contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li>38 Keits Avenue, Berea , Durban Central</li>
-                    <li>+27 74 954 8080</li>
-                    <li>info@durbancentralsda.org</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <script src="js/script.js"></script><button type="button" class="back-to-top" aria-label="Back to top">↑</button>
+
+
+</body></html>

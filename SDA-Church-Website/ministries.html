@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="js"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore ministries at Durban Central SDA Church — Children's, Youth, Women's, Men's, Community, Music, Prayer and Health Ministries — and meet our pastors.">
+    <meta name="theme-color" content="#0b2f5e">
     <link rel="icon" href="images/logo/icon.png" type="image/png">
     <title>Ministries | Durban Central SDA Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo/image_720984e.jpg" alt="Church Logo" width="150">Durban Central SDA Church</a>
-        </div>
-        <nav>
+    <div class="topbar">
+        <div class="wrap">
+            <p>Sabbath School 9:00 AM · Divine Service 10:30 AM · 38 Keits Avenue, Berea, Durban</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ministries.html">Ministries</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="give.html" class="nav-cta">Give</a></li>
+                <li><a href="index.html#watch-live">Watch Live</a></li>
+                <li><a href="index.html#visit">Plan A Visit</a></li>
+                <li><a href="contact.html">Prayer Request</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-mark" src="images/logo/image_720984e.jpg" alt="" width="48" height="48">
+                <span class="brand-text">
+                    <span class="brand-name">Durban Central SDA Church</span>
+                    <span class="brand-sub">Seventh-day Adventist</span>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html" aria-current="page">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="nav-cta">Give</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main id="main-content">
-        <section class="hero hero-page">
+        <section class="hero hero-page dark">
             <div class="hero-content">
                 <p class="breadcrumb"><a href="index.html">Home</a> / Ministries</p>
                 <h1>Our Ministries</h1>
@@ -52,14 +77,14 @@
                 <a href="#ministries" class="btn">See All Ministries</a>
             </div>
             <div class="welcome-image">
-                <img src="images/orignal-images/psngwenayatyica.jpg" alt="Church members serving together" width="150">
+                <img src="images/orignal-images/psngwenayatyica.jpg" alt="Church members serving together">
             </div>
         </section>
 
         <section class="pastors" id="pastors">
             <h2>Meet Our Pastors</h2>
             <article class="pastor">
-                <div class="pastor-image"><img src="images/pastor/pastor1.jpg" alt="Pastor David Mensah" width="150"></div>
+                <div class="pastor-image"><img src="images/pastor/pastor1.jpg" alt="Pastor David Mensah" loading="lazy"></div>
                 <div class="pastor-info">
                     <h3>Pastor David Mensah</h3>
                     <p class="pastor-role">Senior Pastor</p>
@@ -72,11 +97,11 @@
                         Master of Divinity from Adventist University and enjoys spending quality
                         time with his family, reading, and organizing community health expos.
                     </p>
-                    <a href="contact.html" class="link-arrow">Get In Touch &rarr;</a>
+                    <a href="contact.html" class="link-arrow">Get In Touch →</a>
                 </div>
             </article>
             <article class="pastor">
-                <div class="pastor-image"><img src="images/pastor/pastor4.jpg" alt="Amma Osei" width="150"></div>
+                <div class="pastor-image"><img src="images/pastor/pastor4.jpg" alt="Amma Osei" loading="lazy"></div>
                 <div class="pastor-info">
                     <h3>Amma Osei</h3>
                     <p class="pastor-role">Outreach &amp; Evangelism Pastor</p>
@@ -88,21 +113,22 @@
                         at the heart of Christ's mission. In her free time, she enjoys gardening, writing,
                         and hosting fellowship meals.
                     </p>
-                    <a href="contact.html" class="link-arrow">Get In Touch &rarr;</a>
+                    <a href="contact.html" class="link-arrow">Get In Touch →</a>
                 </div>
             </article>
             <article class="pastor">
-                <div class="pastor-image"><img src="images/pastor/pastor2.jpg" alt="Pastor Emmanuel Kwesi" width="150"></div>
+                <div class="pastor-image"><img src="images/pastor/pastor2.jpg" alt="Pastor Emmanuel Kwesi" loading="lazy"></div>
                 <div class="pastor-info">
                     <h3>Pastor Emmanuel Kwesi</h3>
                     <p class="pastor-role">Associate Pastor, Youth &amp; Family</p>
-                    <p>Pastor Emmanuel Kwesi serves as our Associate Pastor, focusing on Youth Ministry,
+                    <p>
+                        Pastor Emmanuel Kwesi serves as our Associate Pastor, focusing on Youth Ministry,
                         Family Life, and Young Adult Discipleship. With a heart for mentoring the next
                         generation, Pastor Emmanuel is committed to creating engaging, Christ-centered
                         spaces where young people can grow in faith and service. He holds a B.A. in Theology
                         and loves music ministry, outdoor camping adventures, and sports evangelism.
                     </p>
-                    <a href="contact.html" class="link-arrow">Get In Touch &rarr;</a>
+                    <a href="contact.html" class="link-arrow">Get In Touch →</a>
                 </div>
             </article>
         </section>
@@ -110,9 +136,9 @@
         <section class="ministries" id="ministries">
             <h2>Our Ministries</h2>
             <div class="ministry-grid">
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/kids ministry/kids13.jpg" alt="Children's Ministry" width="150">
+                        <img src="images/kids ministry/kids13.jpg" alt="Children's Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Children's</h3>
@@ -123,12 +149,12 @@
                             of faith. Grade 5–11 continues this journey with deeper Bible study, mentorship, and
                             fellowship designed to guide pre-teens and teenagers as they grow in their walk with God.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/youth ministry/adedotun-adegborioye-Hop9t10V_pI-unsplash.jpg" alt="Youth Ministry" width="150">
+                        <img src="images/youth ministry/adedotun-adegborioye-Hop9t10V_pI-unsplash.jpg" alt="Youth Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Youth</h3>
@@ -137,12 +163,12 @@
                             questions, build real friendships, and grow a faith that's truly their own — through
                             Bible study, worship nights, camps and outreach.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/women ministry/becca-tapert-VTXbjJrII4o-unsplash.jpg" alt="Women's Ministry" width="150">
+                        <img src="images/women ministry/becca-tapert-VTXbjJrII4o-unsplash.jpg" alt="Women's Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Women's</h3>
@@ -151,12 +177,12 @@
                             prayer, mentorship and fellowship, encouraging one another to grow in Christ and
                             support each other through life's challenges.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/men ministry/jonny-gios-fKQ7zosWvYs-unsplash.jpg" alt="Men's Ministry" width="150">
+                        <img src="images/men ministry/jonny-gios-fKQ7zosWvYs-unsplash.jpg" alt="Men's Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Men's</h3>
@@ -164,12 +190,12 @@
                             Our Men's Ministry challenges men to grow as spiritual leaders in their homes, church
                             and community, through Bible study, accountability groups and hands-on service projects.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/contribute/bbc-creative-5i8i4RmT_xw-unsplash.jpg" alt="Community Ministry" width="150">
+                        <img src="images/contribute/bbc-creative-5i8i4RmT_xw-unsplash.jpg" alt="Community Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Community</h3>
@@ -177,12 +203,12 @@
                             Our Community Ministry serves Durban's most vulnerable through food parcels, clothing
                             drives and ADRA-supported outreach, living out Christ's compassion beyond our church walls.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/music/keagan-henman-NTLFeA-ctqo-unsplash.jpg" alt="Music Ministry" width="150">
+                        <img src="images/music/keagan-henman-NTLFeA-ctqo-unsplash.jpg" alt="Music Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Music</h3>
@@ -190,12 +216,12 @@
                             Our Music Ministry — choir, praise team and instrumentalists — leads the congregation
                             in worship each week and welcomes anyone with a heart to serve through song.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/orignal-images/west-kenya-union-conference-adventist-media-y4kMCLR7LBo-unsplash.jpg" alt="Prayer Ministry" width="150">
+                        <img src="images/orignal-images/west-kenya-union-conference-adventist-media-y4kMCLR7LBo-unsplash.jpg" alt="Prayer Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Prayer</h3>
@@ -203,12 +229,12 @@
                             Our Prayer Ministry stands in the gap for our church and community, interceding for
                             needs big and small and hosting regular prayer meetings and prayer chains.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
-                <article class="ministry-card">
+                <article class="ministry-card reveal">
                     <div class="ministry-image">
-                        <img src="images/orignal-images/powerwalkwiththeelders.jpg" alt="Health Ministry" width="150">
+                        <img src="images/orignal-images/powerwalkwiththeelders.jpg" alt="Health Ministry" loading="lazy">
                     </div>
                     <div class="ministry-text">
                         <h3>Health</h3>
@@ -216,13 +242,13 @@
                             Our Health Ministry promotes whole-person wellness through cooking classes, health
                             screenings and wellness talks rooted in balanced, healthy living.
                         </p>
-                        <a href="contact.html" class="link-arrow">Get Involved &rarr;</a>
+                        <a href="contact.html" class="link-arrow">Get Involved →</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="bible-study">
+        <section class="bible-study" id="study">
             <div class="study-content">
                 <span class="eyebrow">Bible Study</span>
                 <h2>Study God's Word</h2>
@@ -238,7 +264,7 @@
                 <a href="contact.html" class="btn">Join A Study</a>
             </div>
             <div class="study-image">
-                <img src="images/orignal-images/soulwinning.jpg" alt="Members in a small group Bible study" width="150">
+                <img src="images/orignal-images/soulwinning.jpg" alt="Members in a small group Bible study" loading="lazy">
             </div>
         </section>
 
@@ -248,87 +274,57 @@
 
             <h3 class="gallery-subheading">Kids Ministry</h3>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids7.jpg" alt="Children's Ministry activity" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids8.jpg" alt="Children's Ministry activity" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids9.jpg" alt="Children's Ministry activity" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids4.jpg" alt="Children's Ministry activity" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids2.jpg" alt="Children's Ministry activity" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/kids ministry/kids12.jpg" alt="Children's Ministry activity" width="150">
-                </div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids7.jpg" alt="Children's Ministry activity" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids8.jpg" alt="Children's Ministry activity" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids9.jpg" alt="Children's Ministry activity" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids4.jpg" alt="Children's Ministry activity" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids2.jpg" alt="Children's Ministry activity" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Children's Ministry activity"><img src="images/kids ministry/kids12.jpg" alt="Children's Ministry activity" loading="lazy"></div>
             </div>
 
             <h3 class="gallery-subheading">Around Our Church</h3>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/orignal-images/automyouthcamp.jpg" alt="Youth Ministry gathering" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/men ministry/fellipe-silva-CSUQONYj654-unsplash.jpg" alt="Men's Ministry event" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/orignal-images/psngwenya.jpg" alt="Community outreach event" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/orignal-images/dcy_big_1.jpg" alt="Women's Ministry gathering" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/music/mark-pan4ratte-3u9mAxdRAfA-unsplash.jpg" alt="Music Ministry leading worship" width="150">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/men ministry/jonny-gios-fKQ7zosWvYs-unsplash.jpg" alt="Prayer Ministry meeting" width="150">
-                </div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Youth Ministry gathering"><img src="images/orignal-images/automyouthcamp.jpg" alt="Youth Ministry gathering" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Men's Ministry event"><img src="images/men ministry/fellipe-silva-CSUQONYj654-unsplash.jpg" alt="Men's Ministry event" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Community outreach event"><img src="images/orignal-images/psngwenya.jpg" alt="Community outreach event" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Women's Ministry gathering"><img src="images/orignal-images/dcy_big_1.jpg" alt="Women's Ministry gathering" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Music Ministry leading worship"><img src="images/music/mark-pan4ratte-3u9mAxdRAfA-unsplash.jpg" alt="Music Ministry leading worship" loading="lazy"></div>
+                <div class="gallery-item reveal" tabindex="0" role="button" aria-label="View larger: Prayer Ministry meeting"><img src="images/men ministry/jonny-gios-fKQ7zosWvYs-unsplash.jpg" alt="Prayer Ministry meeting" loading="lazy"></div>
             </div>
         </section>
 
         <section class="events" id="events">
             <h2>Upcoming Events</h2>
-            <div class="events-slider">
-                <button class="slider-btn prev" aria-label="Previous event">&lt;</button>
-                <div class="events-track">
-                    <article class="event-card">
-                        <div class="event-image">
-                            <img src="images/events/baptism-recommitment.jpg" alt="Community Baptism and Recommitment Service" width="150">
-                        </div>
-                        <div class="event-info">
-                            <h3>Community Baptism & Recommitment Service</h3>
-                            <p>Saturday, October 18, 2026 | 10:30 AM - 12:30 PM</p>
-                            <p>Celebrate new beginnings as candidates take their step
-                                of faith through holy baptism, followed by a fellowship meal.</p>
-                            <a href="events.html" class="btn">Find Out More</a>
-                        </div>
-                    </article>
-                    <article class="event-card">
-                        <div class="event-image">
-                            <img src="images/events/night-of-praise-and-prayer.jpg" alt="Night of Praise and Prayer" width="150">
-                        </div>
-                        <div class="event-info">
-                            <h3>Night of Praise & Prayer</h3>
-                            <p>Saturday, October 25, 2026 | 7:00 PM - 9:00 PM</p>
-                            <p>Gather with us for an uplifting evening of congregational praise,
-                                prayer, and acoustic worship to refresh your spirit.</p>
-                            <a href="events.html" class="btn">Find Out More</a>
-                        </div>
-                    </article>
-                </div>
-                <button class="slider-btn next" aria-label="Next event">&gt;</button>
+            <p class="events-note">There are no upcoming events listed right now. Check back soon or <a href="contact.html">get in touch</a> to hear what's next.</p><div class="events-track">
+                <article class="event-card is-past reveal" data-checked="1">
+                    <div class="event-image">
+                        <img src="images/events/baptism-recommitment.jpg" alt="Community Baptism and Recommitment Service" loading="lazy">
+                    </div>
+                    <div class="event-info"><span class="event-tag event-tag-past">Past event</span>
+                        <h3>Community Baptism &amp; Recommitment Service</h3>
+                        <p class="event-datetime">Saturday, October 18, 2026 | 10:30 AM – 12:30 PM</p>
+                        <p>Celebrate new beginnings as candidates take their step of faith through holy baptism, followed by a fellowship meal.</p>
+                        <a href="events.html" class="btn">Find Out More</a>
+                    </div>
+                </article>
+                <article class="event-card is-past reveal" data-checked="1">
+                    <div class="event-image">
+                        <img src="images/events/night-of-praise-and-prayer.jpg" alt="Night of Praise and Prayer" loading="lazy">
+                    </div>
+                    <div class="event-info"><span class="event-tag event-tag-past">Past event</span>
+                        <h3>Night of Praise &amp; Prayer</h3>
+                        <p class="event-datetime">Saturday, October 25, 2026 | 7:00 PM – 9:00 PM</p>
+                        <p>Gather with us for an uplifting evening of congregational praise, prayer, and acoustic worship to refresh your spirit.</p>
+                        <a href="events.html" class="btn">Find Out More</a>
+                    </div>
+                </article>
             </div>
             <div class="events-cta">
                 <a href="events.html" class="btn btn-outline">View All Events</a>
             </div>
         </section>
 
-        <section class="cta-band">
+        <section class="cta-band dark">
             <h2>Not Sure Where To Start?</h2>
             <p>Reach out and we'll help you find the ministry that fits you best.</p>
             <div class="hero-buttons">
@@ -339,50 +335,53 @@
     </main>
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-col footer-about">
-                <h4>Durban Central SDA Church</h4>
-                <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+        <div class="wrap">
+            <div class="footer-columns">
+                <div class="footer-col footer-about">
+                    <h4>Durban Central SDA Church</h4>
+                    <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-times">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sabbath School: Sat, 9:00 AM</li>
+                        <li>Divine Service: Sat, 10:30 AM</li>
+                        <li>Prayer Meeting: Wed, 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>38 Keits Avenue, Berea, Durban</li>
+                        <li><a href="tel:+27749548080">+27 74 954 8080</a></li>
+                        <li><a href="mailto:info@durbancentralsda.org">info@durbancentralsda.org</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="ministries.html">Ministries</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="give.html">Give</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col footer-times">
-                <h4>Service Times</h4>
-                <ul>
-                    <li>Sabbath School: Sat, 9:00 AM</li>
-                    <li>Divine Service: Sat, 10:30 AM</li>
-                    <li>Prayer Meeting: Wed, 6:00 PM</li>
-                </ul>
-            </div>
-            <div class="footer-col footer-contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li>38 Keits Avenue, Berea , Durban Central</li>
-                    <li>+27 74 954 8080</li>
-                    <li>info@durbancentralsda.org</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <script src="js/script.js"></script><button type="button" class="back-to-top" aria-label="Back to top">↑</button><dialog class="lightbox" aria-label="Photo viewer"><button type="button" class="lb-close" aria-label="Close photo">×</button><button type="button" class="lb-prev" aria-label="Previous photo">‹</button><figure><img alt=""><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next photo">›</button></dialog>
+
+
+</body></html>

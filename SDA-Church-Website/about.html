@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="js"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Durban Central SDA Church's mission, vision, values, beliefs, leadership and history in Durban, South Africa.">
+    <meta name="theme-color" content="#0b2f5e">
     <link rel="icon" href="images/logo/icon.png" type="image/png">
     <title>About Us | Durban Central SDA Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo/image_720984e.jpg" alt="Church Logo" width="150" height="150">Durban Central SDA Church</a>
-        </div>
-        <nav>
+    <div class="topbar">
+        <div class="wrap">
+            <p>Sabbath School 9:00 AM · Divine Service 10:30 AM · 38 Keits Avenue, Berea, Durban</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ministries.html">Ministries</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="give.html" class="nav-cta">Give</a></li>
+                <li><a href="index.html#watch-live">Watch Live</a></li>
+                <li><a href="index.html#visit">Plan A Visit</a></li>
+                <li><a href="contact.html">Prayer Request</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-mark" src="images/logo/image_720984e.jpg" alt="" width="48" height="48">
+                <span class="brand-text">
+                    <span class="brand-name">Durban Central SDA Church</span>
+                    <span class="brand-sub">Seventh-day Adventist</span>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="nav-cta">Give</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main id="main-content">
-        <!-- Page introduction -->
-        <section class="hero hero-page">
+        <section class="hero hero-page dark">
             <div class="hero-content">
                 <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
                 <h1>About Us</h1>
@@ -36,7 +61,6 @@
             </div>
         </section>
 
-        <!-- Church history and story -->
         <section class="our-story" id="our-story">
             <div class="story-text">
                 <h2>Our Story</h2>
@@ -53,12 +77,11 @@
                 </p>
             </div>
             <div class="story-image">
-                <img src="images/orignal-images/dcy_big_4.jpg" alt="Durban Central SDA Church congregation" width="450">
+                <img src="images/orignal-images/dcy_big_4.jpg" alt="Durban Central SDA Church congregation">
             </div>
         </section>
 
-        <!-- Mission and vision -->
-        <section class="mission-vision" id="mission-vision">
+        <section class="mission-vision dark" id="mission-vision">
             <div class="mv-card">
                 <h2>Mission</h2>
                 <p>
@@ -75,83 +98,82 @@
                 </p>
             </div>
         </section>
+
         <section class="values" id="values">
             <h2>Our Core Values</h2>
             <p class="section-intro">The convictions that shape how we worship, serve and treat one another.</p>
             <ul class="values-grid">
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Biblical Truth</h3>
                     <p>We anchor everything we teach and do in Scripture.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Integrity</h3>
                     <p>We aim to be honest and consistent, in public and in private.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Compassion</h3>
                     <p>We treat every person with the same grace God has shown us.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Service</h3>
                     <p>We believe faith is proven by how we serve our neighbours.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Excellence</h3>
                     <p>We offer God our best in worship, ministry and administration.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Community</h3>
                     <p>We were never meant to walk out our faith alone.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Stewardship</h3>
                     <p>We manage our time, talents and resources as gifts entrusted to us.</p>
                 </li>
-                <li class="value-card">
+                <li class="value-card reveal">
                     <h3>Respect</h3>
                     <p>We honour the dignity of every person, without exception.</p>
                 </li>
             </ul>
         </section>
 
-        <!-- Statement of beliefs -->
         <section class="beliefs" id="beliefs">
             <h2>What We Believe</h2>
             <p>
                 As a Seventh-day Adventist church, we hold to the 28 Fundamental Beliefs shared by
-                Adventist congregations worldwide &mdash; covering Scripture, the Godhead, creation,
+                Adventist congregations worldwide — covering Scripture, the Godhead, creation,
                 salvation by grace through faith, the Sabbath, and the soon return of Jesus Christ,
                 among others.
             </p>
             <a href="https://www.adventist.org/beliefs/" class="btn" target="_blank" rel="noopener">Read Our 28 Fundamental Beliefs</a>
         </section>
 
-        <!-- Leadership -->
         <section class="leadership" id="leadership">
             <h2>Meet Our Leadership</h2>
             <p class="section-intro">The team who shepherd and serve our church family.</p>
             <!-- Replace placeholder leadership details when final information is available. -->
             <div class="leadership-grid">
-                <article class="leader-card">
-                    <img src="images/pastor/pastor1.jpg" alt="Senior Pastor" width="150" height="250">
+                <article class="leader-card reveal">
+                    <img src="images/pastor/pastor1.jpg" alt="Pastor David Mensah" loading="lazy">
                     <h3>Pastor David Mensah</h3>
                     <p class="leader-role">Senior Pastor</p>
                     <p>Leads our congregation in worship, teaching and pastoral care.</p>
                 </article>
-                <article class="leader-card">
-                    <img src="images/pastor/pastor2.jpg" alt="Head Elder" width="150" height="250">
+                <article class="leader-card reveal">
+                    <img src="images/pastor/pastor2.jpg" alt="Emmanuel Kwesi" loading="lazy">
                     <h3>Emmanuel Kwesi</h3>
                     <p class="leader-role">Head Elder</p>
                     <p>Supports the pastor and oversees the local church board.</p>
                 </article>
-                <article class="leader-card">
-                    <img src="images/pastor/pastor3.jpg" alt="Ministries Coordinator" width="150" height="250">
+                <article class="leader-card reveal">
+                    <img src="images/pastor/pastor3.jpg" alt="Kofi Boateng" loading="lazy">
                     <h3>Kofi Boateng</h3>
                     <p class="leader-role">Ministries Coordinator</p>
                     <p>Helps members find their place across our ministries.</p>
                 </article>
-                <article class="leader-card">
-                    <img src="images/pastor/pastor4.jpg" alt="Youth & Pathfinders Leader" width="150" height="250">
+                <article class="leader-card reveal">
+                    <img src="images/pastor/pastor4.jpg" alt="Amma Osei" loading="lazy">
                     <h3>Amma Osei</h3>
                     <p class="leader-role">Youth &amp; Pathfinders Leader</p>
                     <p>Guides our children and teens in faith and adventure.</p>
@@ -159,7 +181,6 @@
             </div>
         </section>
 
-        <!-- Church history timeline -->
         <section class="timeline" id="history">
             <h2>Our Journey</h2>
             <ol class="timeline-list">
@@ -177,7 +198,7 @@
                 </li>
                 <li>
                     <span class="timeline-year">2025</span>
-                    <p>The congregation prepared to inaugurate its modern church building, reflecting years of faith, dedication, and God's blessings</p>
+                    <p>The congregation prepared to inaugurate its modern church building, reflecting years of faith, dedication, and God's blessings.</p>
                 </li>
                 <li>
                     <span class="timeline-year">Today</span>
@@ -186,23 +207,22 @@
             </ol>
         </section>
 
-        <!-- Information for first-time visitors -->
         <section class="visiting" id="visiting">
             <h2>Visiting For The First Time?</h2>
             <div class="visiting-grid">
-                <div class="visiting-card">
+                <div class="visiting-card reveal">
                     <h3>What To Wear</h3>
                     <p>Come as you are. Many members dress smart-casual, but you'll never feel out of place.</p>
                 </div>
-                <div class="visiting-card">
+                <div class="visiting-card reveal">
                     <h3>What To Expect</h3>
                     <p>Sabbath School (Bible study) starts at 9:00 AM, followed by Divine Service at 10:30 AM.</p>
                 </div>
-                <div class="visiting-card">
+                <div class="visiting-card reveal">
                     <h3>For Your Kids</h3>
                     <p>Children's Sabbath School classes run during service, so the whole family can grow together.</p>
                 </div>
-                <div class="visiting-card">
+                <div class="visiting-card reveal">
                     <h3>Parking</h3>
                     <p>On-site parking is available, with members happy to help direct you when you arrive.</p>
                 </div>
@@ -210,8 +230,7 @@
             <a href="index.html#visit" class="btn">Plan Your Visit</a>
         </section>
 
-        <!-- Closing call to action -->
-        <section class="cta-band">
+        <section class="cta-band dark">
             <h2>We'd Love To Meet You</h2>
             <p>Join us this Sabbath and see why so many call this church home.</p>
             <div class="hero-buttons">
@@ -222,50 +241,53 @@
     </main>
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-col footer-about">
-                <h4>Durban Central SDA Church</h4>
-                <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+        <div class="wrap">
+            <div class="footer-columns">
+                <div class="footer-col footer-about">
+                    <h4>Durban Central SDA Church</h4>
+                    <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-times">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sabbath School: Sat, 9:00 AM</li>
+                        <li>Divine Service: Sat, 10:30 AM</li>
+                        <li>Prayer Meeting: Wed, 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>38 Keits Avenue, Berea, Durban</li>
+                        <li><a href="tel:+27749548080">+27 74 954 8080</a></li>
+                        <li><a href="mailto:info@durbancentralsda.org">info@durbancentralsda.org</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="ministries.html">Ministries</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="give.html">Give</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col footer-times">
-                <h4>Service Times</h4>
-                <ul>
-                    <li>Sabbath School: Sat, 9:00 AM</li>
-                    <li>Divine Service: Sat, 10:30 AM</li>
-                    <li>Prayer Meeting: Wed, 6:00 PM</li>
-                </ul>
-            </div>
-            <div class="footer-col footer-contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li>38 Keits Avenue, Berea , Durban Central</li>
-                    <li>+27 74 954 8080</li>
-                    <li>info@durbancentralsda.org</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <script src="js/script.js"></script><button type="button" class="back-to-top" aria-label="Back to top">↑</button>
+
+
+</body></html>

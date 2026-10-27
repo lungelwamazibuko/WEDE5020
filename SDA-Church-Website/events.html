@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="js"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See what's happening at Durban Central SDA Church — upcoming baptisms, prayer nights, outreach events, and our weekly Sabbath services and Bible studies.">
+    <meta name="theme-color" content="#0b2f5e">
     <link rel="icon" href="images/logo/icon.png" type="image/png">
     <title>Events | Durban Central SDA Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo/image_720984e.jpg" alt="Church Logo" width="150">Durban Central SDA Church</a>
-        </div>
-        <nav>
+    <div class="topbar">
+        <div class="wrap">
+            <p>Sabbath School 9:00 AM · Divine Service 10:30 AM · 38 Keits Avenue, Berea, Durban</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ministries.html">Ministries</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="give.html" class="nav-cta">Give</a></li>
+                <li><a href="index.html#watch-live">Watch Live</a></li>
+                <li><a href="index.html#visit">Plan A Visit</a></li>
+                <li><a href="contact.html">Prayer Request</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-mark" src="images/logo/image_720984e.jpg" alt="" width="48" height="48">
+                <span class="brand-text">
+                    <span class="brand-name">Durban Central SDA Church</span>
+                    <span class="brand-sub">Seventh-day Adventist</span>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html" aria-current="page">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="nav-cta">Give</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main id="main-content">
-        <section class="hero hero-page">
+        <section class="hero hero-page dark">
             <div class="hero-content">
                 <p class="breadcrumb"><a href="index.html">Home</a> / Events</p>
                 <h1>Upcoming Events</h1>
@@ -36,54 +61,52 @@
             </div>
         </section>
 
-        <!-- Featured upcoming event -->
-        <section class="featured-event" id="next-event">
+        <section class="featured-event is-past" id="next-event" data-checked="1">
             <div class="featured-image">
-                <img src="images/events/baptism-recommitment.jpg" alt="Community Baptism and Recommitment Service" width="150">
+                <img src="images/events/baptism-recommitment.jpg" alt="Community Baptism and Recommitment Service">
             </div>
             <div class="featured-content">
-                <span class="event-badge">Next Up</span>
+                <span class="event-badge event-badge-past">Past event</span>
                 <span class="event-tag">Worship</span>
-                <h2>Community Baptism & Recommitment Service</h2>
+                <h2>Community Baptism &amp; Recommitment Service</h2>
                 <p class="event-datetime">Saturday, October 18, 2026 | 10:30 AM – 12:30 PM</p>
                 <p>
                     Celebrate new beginnings as candidates take their step of faith through holy
                     baptism, followed by a fellowship meal.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Community+Baptism+%26+Recommitment+Service&amp;dates=20261018T083000Z/20261018T103000Z&amp;details=Celebrate+new+beginnings+as+candidates+take+their+step+of+faith+through+holy+baptism%2C+followed+by+a+fellowship+meal.&amp;location=38+Keits+Avenue%2C+Berea%2C+Durban" class="btn" target="_blank" rel="noopener">Add To Calendar</a>
+                    
                     <a href="https://www.google.com/maps/dir/?api=1&amp;destination=38+Keits+Avenue+Berea+Durban" class="btn btn-outline" target="_blank" rel="noopener">Get Directions</a>
                 </div>
             </div>
         </section>
 
-        <!-- Additional upcoming events -->
         <section class="events" id="events">
             <h2>More Upcoming Events</h2>
             <div class="event-grid">
-                <article class="event-card">
+                <article class="event-card is-past reveal" data-checked="1">
                     <div class="event-image">
-                        <img src="images/events/night-of-praise-and-prayer.jpg" alt="Night of Praise and Prayer" width="150">
+                        <img src="images/events/night-of-praise-and-prayer.jpg" alt="Night of Praise and Prayer" loading="lazy">
                     </div>
-                    <div class="event-content">
+                    <div class="event-content"><span class="event-tag event-tag-past">Past event</span>
                         <span class="event-tag">Worship</span>
-                        <h3>Night of Praise & Prayer</h3>
+                        <h3>Night of Praise &amp; Prayer</h3>
                         <p class="event-datetime">Saturday, October 25, 2026 | 7:00 PM – 9:00 PM</p>
                         <p>
                             Gather with us for an uplifting evening of congregational praise,
                             prayer, and acoustic worship to refresh your spirit.
                         </p>
-                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Night+of+Praise+%26+Prayer&amp;dates=20261025T170000Z/20261025T190000Z&amp;details=Gather+with+us+for+an+uplifting+evening+of+congregational+praise%2C+prayer%2C+and+acoustic+worship+to+refresh+your+spirit.&amp;location=38+Keits+Avenue%2C+Berea%2C+Durban" class="btn" target="_blank" rel="noopener">Add to Calendar</a>
+                        
                     </div>
                 </article>
 
-                <article class="event-card">
+                <article class="event-card reveal" data-checked="1">
                     <div class="event-image">
-                        <img src="images/events/community-health-and-wellness-expo.jpg" alt="Community Health and Wellness Expo" width="150">
+                        <img src="images/events/community-health-and-wellness-expo.jpg" alt="Community Health and Wellness Expo" loading="lazy">
                     </div>
                     <div class="event-content">
                         <span class="event-tag">Outreach</span>
-                        <h3>Community Health & Wellness Expo</h3>
+                        <h3>Community Health &amp; Wellness Expo</h3>
                         <p class="event-datetime">Saturday, November 8, 2026 | 9:00 AM – 1:00 PM</p>
                         <p>
                             Free health screenings, wellness talks and cooking demonstrations
@@ -93,13 +116,13 @@
                     </div>
                 </article>
 
-                <article class="event-card">
+                <article class="event-card reveal" data-checked="1">
                     <div class="event-image">
-                        <img src="images/orignal-images/dcy_big_3.jpg" alt="Pathfinder and Adventurer Investiture" width="150">
+                        <img src="images/orignal-images/dcy_big_3.jpg" alt="Pathfinder and Adventurer Investiture" loading="lazy">
                     </div>
                     <div class="event-content">
                         <span class="event-tag">Youth</span>
-                        <h3>Pathfinder & Adventurer Investiture</h3>
+                        <h3>Pathfinder &amp; Adventurer Investiture</h3>
                         <p class="event-datetime">Saturday, November 22, 2026 | 2:00 PM – 4:00 PM</p>
                         <p>
                             Cheer on our Pathfinders and Adventurers as they're recognized for a
@@ -111,7 +134,6 @@
             </div>
         </section>
 
-        <!-- Recurring weekly gatherings, separate from one-off events -->
         <section class="recurring-events" id="weekly">
             <h2>Weekly &amp; Regular Gatherings</h2>
             <p class="section-intro">Join us every week — no RSVP needed.</p>
@@ -135,7 +157,7 @@
             </ul>
         </section>
 
-        <section class="cta-band">
+        <section class="cta-band dark">
             <h2>Have An Event To Share?</h2>
             <p>Let us know about your ministry event and we'll help get the word out.</p>
             <a href="contact.html" class="btn">Contact Us</a>
@@ -143,50 +165,53 @@
     </main>
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-col footer-about">
-                <h4>Durban Central SDA Church</h4>
-                <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+        <div class="wrap">
+            <div class="footer-columns">
+                <div class="footer-col footer-about">
+                    <h4>Durban Central SDA Church</h4>
+                    <p>A Seventh-day Adventist church family worshipping together in Durban, South Africa.</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-times">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sabbath School: Sat, 9:00 AM</li>
+                        <li>Divine Service: Sat, 10:30 AM</li>
+                        <li>Prayer Meeting: Wed, 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>38 Keits Avenue, Berea, Durban</li>
+                        <li><a href="tel:+27749548080">+27 74 954 8080</a></li>
+                        <li><a href="mailto:info@durbancentralsda.org">info@durbancentralsda.org</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="ministries.html">Ministries</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="give.html">Give</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col footer-times">
-                <h4>Service Times</h4>
-                <ul>
-                    <li>Sabbath School: Sat, 9:00 AM</li>
-                    <li>Divine Service: Sat, 10:30 AM</li>
-                    <li>Prayer Meeting: Wed, 6:00 PM</li>
-                </ul>
-            </div>
-            <div class="footer-col footer-contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li>38 Keits Avenue, Berea , Durban Central</li>
-                    <li>+27 74 954 8080</li>
-                    <li>info@durbancentralsda.org</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>&copy; 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 Durban Central Seventh-day Adventist Church. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/TheAdventistChurch/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/adventistchurch/?hl=en" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.youtube.com/@AdventistOrgChurch/" target="_blank" rel="noopener">YouTube</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <script src="js/script.js"></script><button type="button" class="back-to-top" aria-label="Back to top">↑</button>
+
+
+</body></html>
